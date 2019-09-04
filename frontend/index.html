@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  <title>青年租房</title>
+  <script type="text/javascript" src="/static/js/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/static/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/static/css/chocolat.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/static/css/animate.css" type="text/css" media="all">
+  <!-- Body-Font -->	 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" type="text/css">
+  <!-- Logo-Font -->	 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900,700" type="text/css">
+  <!-- Navbar-Font --> <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700"			   type="text/css">
+  <!-- FONT AWESOME STYLE  -->
+  <link href="static/css1/font-awesome.css" rel="stylesheet" />
+  <!-- CUSTOM STYLE  -->
+  <link href="static/css1/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script src="/static/js/vr.js"></script>
+
+  <!-- GOOGLE FONT -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+<!-- Default-JavaScript -->
+<!-- Bootstrap-JavaScript --> <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+<!-- Animate.CSS-JavaScript -->
+<script src="/static/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!-- //Animate.CSS-JavaScript -->
+
+<!-- Portfolio-Popup-Box-JavaScript -->
+<script src="/static/js/modernizr.custom.97074.js"></script>
+<script src="/static/js/jquery.chocolat.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.portfolio-item a').Chocolat();
+    });
+</script>
+<!-- //Portfolio-Popup-Box-JavaScript -->
+
+<!-- Slide-To-Top JavaScript (No-Need-To-Change) -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 100,
+            easingType: 'linear'
+        };
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+</script>
+<a href="#" id="toTop" class="agileits w3layouts" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
+<!-- //Slide-To-Top JavaScript -->
+
+<!-- Smooth-Scrolling-JavaScript -->
+<script type="text/javascript" src="/static/js/move-top.js"></script><!-- BOOTSTRAP SCRIPTS  -->
+<script src="/static/jss/custom.js"></script>
+<!-- Bootstrap-JavaScript --> <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/static/js/easing.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll, .navbar li a, .footer li a").click(function(event){
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
+<!-- Animate.CSS-JavaScript -->
+<script src="/static/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!-- //Animate.CSS-JavaScript -->
+
+<!-- Slide-To-Top JavaScript (No-Need-To-Change) -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 100,
+            easingType: 'linear'
+        };
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+</script>
+<script>
+
+    var skyBack = document.querySelector('#asky-back');
+    var skyFront = document.querySelector('#asky-front');
+    var arrow = document.querySelector('#arrow1');
+    var cur = document.querySelector('#cursor');
+
+    arrow.addEventListener('click', function (evt) {
+        var time=300;
+        var i = time;
+        var j = 0;
+        function fadeOut(picTarget)
+        {
+            skyBack.setAttribute('src',picTarget);
+            skyFront.setAttribute('opacity',(1/time)*i);
+            skyBack.setAttribute('opacity',(1/time)*j);
+            j++;i--;
+            if(i>0) setTimeout(function(){fadeOut(picTarget)},1);
+            else setTimeout(skyFront.setAttribute('src',picTarget),time);
+        }
+        if(skyFront.getAttribute('src')=='#floor'){
+            setTimeout(fadeOut('#ru'),1000);
+        }else{
+            setTimeout(fadeOut('#floor'),1000);
+        }
+    });
+
+</script>
+
+</html>
