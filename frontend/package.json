@@ -15,7 +15,7 @@
     "html2canvas": "^1.0.0-rc.3",
     "js-md5": "^0.7.3",
     "jspdf": "^1.5.3",
-    "plupload": "^2.3.6",
+    "plupload": "^2.3.9",
     "qs": "^6.8.0",
     "vue": "^2.5.2",
     "vue-monoplasty-slide-verify": "^1.0.5",
